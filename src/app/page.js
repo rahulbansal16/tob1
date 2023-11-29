@@ -49,17 +49,17 @@ export default function Home() {
         <p className="text-xl mb-6 text-center">Our tool is packed with amazing features. It is very well crafted by closely.</p>
         <div className="flex flex-col sm:flex-row justify-around p-4 sm:p-8 md:p-12">
         <div className="text-center p-4">
-          <img src="https://via.placeholder.com/250" alt="Feature 1" className="mx-auto mb-2"/>
+          <img src="https://source.unsplash.com/random/feature" alt="Feature 1" className="mx-auto h-60 mb-2"/>
           <h4 className="font-bold">Feature One</h4>
           <p>Short description of the feature.</p>
         </div>
         <div className="text-center p-4">
-          <img src="https://via.placeholder.com/250" alt="Feature 2" className="mx-auto mb-2"/>
+          <img src="https://source.unsplash.com/random/featurres" alt="Feature 2" className="mx-auto h-60 mb-2"/>
           <h4 className="font-bold">Feature Two</h4>
           <p>Short description of the feature.</p>
         </div>
         <div className="text-center p-4">
-          <img src="https://via.placeholder.com/250" alt="Feature 3" className="mx-auto mb-2"/>
+          <img src="https://source.unsplash.com/random/features3" alt="Feature 3" className="mx-auto h-60 mb-2"/>
           <h4 className="font-bold">Feature Three</h4>
           <p>Short description of the feature.</p>
         </div>
@@ -116,17 +116,17 @@ export default function Home() {
         <h3 className="text-4xl font-bold mb-4 text-center text-black pd-8">What Our Customers Say</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="text-center">
-            <img src="https://via.placeholder.com/120" alt="Customer 1" className="mx-auto rounded-full my-8"/>
+            <img src="https://source.unsplash.com/random/humans" alt="Customer 1" className="mx-auto rounded-full my-8 h-40 w-40"/>
             <blockquote className="text-center">"Amazing product, transformed our workflow!"</blockquote>
             <cite>- Jane Doe, CEO of ABC Corp</cite>
           </div>
           <div className="text-center">
-            <img src="https://via.placeholder.com/120" alt="Customer 2" className="mx-auto rounded-full my-8"/>
+            <img src="https://source.unsplash.com/random/human" alt="Customer 2" className="mx-auto rounded-full my-8 h-40 w-40"/>
             <blockquote className="text-center">"Incredible support and easy to use."</blockquote>
             <cite>- John Smith, CTO of XYZ Inc</cite>
           </div>
           <div className="text-center">
-            <img src="https://via.placeholder.com/120" alt="Customer 3" className="mx-auto rounded-full my-8"/>
+            <img src="https://source.unsplash.com/random/human3" alt="Customer 3" className="mx-auto rounded-full my-8 h-40 w-40"/>
             <blockquote className="text-center">"Very intuitive and efficient."</blockquote>
             <cite>- Emily Johnson, Product Manager</cite>
           </div>
