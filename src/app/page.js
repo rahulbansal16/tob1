@@ -33,7 +33,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="text-center p-4 sm:p-8 md:p-12 bg-cover bg-hero-pattern">
+      <section className="text-center bg-black text-white p-4 sm:p-8 md:p-12 bg-cover bg-hero-pattern">
         <h2 className="text-5xl font-bold mb-6">Introducing Our SaaS Product</h2>
         <p className="text-xl mb-6">Transforming your workflow with ease and efficiency.</p>
         <img src="https://via.placeholder.com/350" alt="Hero Image" className="mx-auto mb-6"/>
@@ -66,12 +66,12 @@ export default function Home() {
       </section>
 
             {/* Pricing Section */}
-      <section id="pricing" className="p-4 sm:p-8 md:p-12 bg-gray-900 text-white h-screen align-middle">
-        <h3 className="text-4xl font-bold mb-4 text-center text-[#007BFF]">Our Pricing Plans</h3>
+      <section id="pricing" className="p-4 sm:p-8 md:p-12 bg-black text-white align-middle">
+        <h3 className="text-4xl font-bold mb-4 text-center text-white py-10">Our Pricing Plans</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-          <div className="p-4 border border-blue-200 rounded-lg shadow">
+          <div className="p-4 border border-blue-200 round-lg shadow shadcn-card h-80">
             <h4 className="font-bold text-lg">Basic</h4>
-            <p className="text-gray-600">Ideal for individuals</p>
+            <p className="text-gray-300">Ideal for individuals</p>
             <p className="text-2xl font-bold">$0/month</p>
             <ul className="text-left">
               <li>Basic features</li>
@@ -81,7 +81,7 @@ export default function Home() {
               Sign Up
             </Link>
           </div>
-          <div className="p-4 border border-blue-200 rounded-lg shadow">
+          <div className="p-4 border border-blue-200 rounded-lg shadow shadcn-card">
             <h4 className="font-bold text-lg">Pro</h4>
             <p className="text-gray-600">For small businesses</p>
             <p className="text-2xl font-bold">$50/month</p>
@@ -94,7 +94,7 @@ export default function Home() {
               Sign Up
             </Link>
           </div>
-          <div className="p-4 border border-blue-200 rounded-lg shadow">
+          <div className="p-4 border border-blue-200 rounded-lg shadow shadcn-card">
             <h4 className="font-bold text-lg">Premium</h4>
             <p className="text-gray-600">Best for large organizations</p>
             <p className="text-2xl font-bold">Contact for pricing</p>
