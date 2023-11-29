@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       {/* Header Section */}
-      <header className="sticky top-0 bg-gray-900 text-white p-4">
+      <header className="sticky top-0 bg-slate-600 text-white p-4">
         <nav className="flex justify-between items-center">
           <img src="https://via.placeholder.com/50" alt="Company Logo" className="h-8"/>
           <div>
@@ -33,11 +33,12 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="text-center bg-black text-white p-4 sm:p-8 md:p-12 bg-cover bg-hero-pattern">
+      <section className="text-center bg-slate-800 text-white p-4 sm:p-8 md:p-12 bg-cover bg-hero-pattern h-screen">
         <h2 className="text-5xl font-bold mb-6">Introducing Our SaaS Product</h2>
         <p className="text-xl mb-6">Transforming your workflow with ease and efficiency.</p>
-        <img src="https://via.placeholder.com/350" alt="Hero Image" className="mx-auto mb-6"/>
-        <Link href="/signup" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        {/* <img src="https://via.placeholder.com/350" alt="Hero Image" className="mx-auto mb-6"/> */}
+        <iframe className='mx-auto' width="560" height="315" src="https://www.youtube.com/embed/ZK-rNEhJIDs?si=3bRk7ah4bKhgN7KO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <Link href="/signup" className="bg-blue-500 hover:bg-blue-700 text-white font-bold my-10 py-2 px-8 rounded">
           Sign Up
         </Link>
       </section>
@@ -66,7 +67,7 @@ export default function Home() {
       </section>
 
             {/* Pricing Section */}
-      <section id="pricing" className="p-4 sm:p-8 md:p-12 bg-black text-white align-middle">
+      <section id="pricing" className="p-4 sm:p-8 md:p-12 bg-slate-800 text-white align-middle">
         <h3 className="text-4xl font-bold mb-4 text-center text-white py-10">Our Pricing Plans</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
           <div className="p-4 border border-blue-200 round-lg shadow shadcn-card h-80">
@@ -77,7 +78,7 @@ export default function Home() {
               <li>Basic features</li>
               <li>Up to 5 demos per month</li>
             </ul>
-            <Link href="/signup" className="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            <Link href="/signup" className="mt-4 bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
               Sign Up
             </Link>
           </div>
@@ -154,7 +155,7 @@ export default function Home() {
       </section> */}
 
       {/* Footer */}
-       <footer className="bg-gray-900 text-white p-4 sm:p-6 md:p-8 text-center">
+       <footer className="bg-slate-950 text-white p-4 sm:p-6 md:p-8 text-center">
         <p>Follow us on social media</p>
         <p>Privacy Policy | Terms of Service | Contact Email</p>
       </footer>
