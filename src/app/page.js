@@ -5,6 +5,7 @@ const WebsiteWireframe = () => {
   return (
     <div>
       <CollaborativeTeam/>
+      <PricingComponent/>
       <FeatureComponent/>
       <TestimonialComponent></TestimonialComponent>
       <Navbar/>
@@ -437,5 +438,98 @@ function Navbar(props) {
         </div>
       </div>
     </header>
+  );
+}
+
+
+function PricingComponentCard(props) {
+  return (
+    <div className="border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white flex flex-col items-stretch pb-12 rounded-3xl border-solid">
+      <header className="bg-slate-50 flex w-full flex-col px-10 py-12 rounded-3xl max-md:px-5">
+        <h1 className="text-black text-center text-3xl font-bold leading-10 self-center mt-1.5">Basic</h1>
+        <h2 className="text-black text-center text-xl font-medium leading-6 mt-7">ideal for individuals</h2>
+        <h1 className="text-black text-center text-4xl font-bold leading-[66px] self-center mt-5">$0</h1>
+        <button className="text-white text-center text-xl font-bold leading-5 justify-center items-center bg-black self-stretch mt-7 px-5 py-7 rounded-[47.273px]">Get started</button>
+      </header>
+      <form className="flex w-full flex-col items-stretch mt-10 mb-6 px-11 max-md:px-5">
+        <div className="items-stretch flex justify-between gap-3.5">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a56fc00-b8dd-4b26-b0ef-93b77806db3e?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">All analytics features</div>
+        </div>
+        <div className="items-stretch flex justify-between gap-3.5 mt-4">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc3344ff-b198-4d37-a02f-0ca843f10776?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 250,000 tracked visits</div>
+        </div>
+        <div className="items-stretch flex justify-between gap-3.5 mt-4">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/da0d5466-3e37-4d98-a524-0095dfc74b78?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Normal support</div>
+        </div>
+        <div className="items-stretch flex justify-between gap-3.5 mt-4">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc6fb51a-84e3-42f0-ab11-8a7c46461cb0?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Mobile app</div>
+        </div>
+        <div className="items-stretch flex justify-between gap-3.5 mt-4">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7db4a653-bdda-4068-842e-af8ce1e53197?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 3 team members</div>
+        </div>
+      </form>
+    </div>
+  );
+}
+
+function PricingComponent(props) {
+  return (
+    <div className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
+      <header className="header text-gray-400 text-center text-lg font-bold leading-5 tracking-widest uppercase self-center">Pricing</header>
+      <h1 className="text-black text-center text-6xl font-bold leading-[66px] max-w-[656px] self-center mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Affordable pricing plans</h1>
+      <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque ut quis.</p>
+
+      <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
+        {/* <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+          <div className="flex flex-col items-stretch w-[33%] max-md:w-full max-md:ml-0">
+            <div className="border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white flex grow flex-col items-stretch w-full pt-px pb-12 rounded-3xl border-solid max-md:mt-7">
+              <div className="bg-slate-50 flex flex-col px-10 py-12 rounded-3xl max-md:px-5">
+                <h2 className="text-black text-center text-3xl font-bold leading-10 self-center mt-1.5">Basic</h2>
+                <p className="text-black text-center text-xl font-medium leading-6 mt-7">ideal for individuals</p>
+                <h3 className="text-black text-center text-4xl font-bold leading-[66px] self-center mt-5">$0</h3>
+                <button className="text-white text-center text-xl font-bold leading-5 justify-center items-center bg-black self-stretch mt-7 px-5 py-7 rounded-[47.273px]" aria-label="Get started">Get started</button>
+              </div>
+              <div className="flex flex-col items-stretch mt-10 mb-6 px-11 max-md:px-5">
+                <div className="items-stretch flex justify-between gap-3.5">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/168e1457-9e26-43b3-b55c-f84f7f57f454?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" alt="Analytics Features" />
+                  <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">All analytics features</div>
+                </div>
+                <div className="items-stretch flex justify-between gap-3.5 mt-4">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b557f46d-a7af-4a83-aee2-141d7749ff60?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" alt="Tracked Visits" />
+                  <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 250,000 tracked visits</div>
+                </div>
+                <div className="items-stretch flex justify-between gap-3.5 mt-4">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/00b84fc3-3830-4586-95cd-08a2716195da?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" alt="Support" />
+                  <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Normal support</div>
+                </div>
+                <div className="items-stretch flex justify-between gap-3.5 mt-4">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a578304-8771-4cf1-8f7e-44623c8ebc9f?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" alt="Mobile App" />
+                  <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Mobile app</div>
+                </div>
+                <div className="items-stretch flex justify-between gap-3.5 mt-4">
+                  <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/901b3a08-a25e-4c38-9457-5026cc593518?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" alt="Team Members" />
+                  <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 3 team members</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0" />
+          <div cla
+          ssName="flex flex-col items-stretch w-[33%] ml-5 max-md:w-full max-md:ml-0" />
+        </div> */}
+
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 align-middle">
+
+        <PricingComponentCard/>
+        <PricingComponentCard/>
+        <PricingComponentCard/>
+        </div>
+      </form>
+    </div>
   );
 }
