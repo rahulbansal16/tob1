@@ -305,12 +305,97 @@ function TestimonialComponent() {
 
 
 
+// function Navbar(props) {
+//   return (
+//     <header className="items-stretch bg-white flex flex-col justify-center align-middle">
+//       <div className="bg-white flex w-[1440px] max-w-full flex-col items-center px-20 py-11 max-md:px-5">
+//         <div className="self-stretch flex items-stretch justify-between gap-5 mt-2.5 mx-8 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mr-2.5">
+//           <div className="items-center flex justify-between gap-5">
+//             <img
+//               loading="lazy"
+//               src="https://cdn.builder.io/api/v1/image/assets/TEMP/55a638a0-38d6-4278-ad2c-5ad279c6a570?apiKey=d281bd051822428daa150eb2eda86050&"
+//               className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0 max-w-full my-auto"
+//               alt="Logo"
+//             />
+//             <div className="text-black text-center text-4xl font-semibold leading-[54px] self-stretch">
+//               Logo
+//             </div>
+//           </div>
+//           <div className="justify-between items-stretch self-center flex gap-5 my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+//             <a
+//               href="#home"
+//               className="text-slate-400 text-center text-lg leading-5"
+//             >
+//               Home
+//             </a>
+//             <a
+//               href="#about"
+//               className="text-slate-400 text-center text-lg leading-5"
+//             >
+//               About
+//             </a>
+//             <a
+//               href="#features"
+//               className="text-slate-400 text-center text-lg leading-5"
+//             >
+//               Features
+//             </a>
+//             <a
+//               href="#pricing"
+//               className="text-slate-400 text-center text-lg leading-5"
+//             >
+//               Pricing
+//             </a>
+//             <a
+//               href="#contact"
+//               className="text-slate-400 text-center text-lg leading-5"
+//             >
+//               Contact Us
+//             </a>
+//           </div>
+//           <div className="justify-end items-stretch self-center flex gap-4 my-auto max-md:justify-center">
+//             <img
+//               loading="lazy"
+//               src="https://cdn.builder.io/api/v1/image/assets/TEMP/58ea4df9-851d-4c3a-a2eb-acee41a71a49?apiKey=d281bd051822428daa150eb2eda86050&"
+//               className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
+//               alt="Image 1"
+//             />
+//             <img
+//               loading="lazy"
+//               src="https://cdn.builder.io/api/v1/image/assets/TEMP/59963193-a7ed-4d45-9905-5f233755d778?apiKey=d281bd051822428daa150eb2eda86050&"
+//               className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
+//               alt="Image 2"
+//             />
+//             <img
+//               loading="lazy"
+//               src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fc1c2af-af02-4f67-acca-ab1921db4a5a?apiKey=d281bd051822428daa150eb2eda86050&"
+//               className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
+//               alt="Image 3"
+//             />
+//             <img
+//               loading="lazy"
+//               src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4520283-994c-4486-9031-fe76865692bd?apiKey=d281bd051822428daa150eb2eda86050&"
+//               className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
+//               alt="Image 4"
+//             />
+//           </div>
+//         </div>
+//         <div className="bg-gray-300 self-stretch w-full shrink-0 h-px mt-20 mx-8 max-md:mr-2.5 max-md:mt-10" />
+//         <div className="text-slate-400 text-center text-lg leading-5 max-w-[550px] mt-8 max-md:max-w-full">
+//           Copyright © 2023 product name | Privacy policy | Terms of service
+//         </div>
+//       </div>
+//     </header>
+//   );
+// }
+
+
 function Navbar(props) {
   return (
-    <header className="items-stretch bg-white flex flex-col justify-center">
-      <div className="bg-white flex w-[1440px] max-w-full flex-col items-center px-20 py-11 max-md:px-5">
-        <div className="self-stretch flex items-stretch justify-between gap-5 mt-2.5 mx-8 max-md:max-w-full max-md:flex-wrap max-md:justify-center max-md:mr-2.5">
-          <div className="items-center flex justify-between gap-5">
+    <header className="items-stretch bg-white flex flex-col justify-center align-middle">
+      <div className="bg-white flex w-full max-w-full flex-col items-center px-20 py-11 max-md:px-5">
+        <div className="self-stretch flex items-center justify-center gap-5 mt-2.5 mx-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5">
+          <a href="#home" className="flex items-center justify-between gap-5">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/55a638a0-38d6-4278-ad2c-5ad279c6a570?apiKey=d281bd051822428daa150eb2eda86050&"
@@ -320,69 +405,35 @@ function Navbar(props) {
             <div className="text-black text-center text-4xl font-semibold leading-[54px] self-stretch">
               Logo
             </div>
+          </a>
+          <div className="justify-center items-center self-center flex gap-5 my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center">
+            <a href="#home" className="text-slate-400 text-center text-lg leading-5">Home</a>
+            <a href="#about" className="text-slate-400 text-center text-lg leading-5">About</a>
+            <a href="#features" className="text-slate-400 text-center text-lg leading-5">Features</a>
+            <a href="#pricing" className="text-slate-400 text-center text-lg leading-5">Pricing</a>
+            <a href="#contact" className="text-slate-400 text-center text-lg leading-5">Contact Us</a>
           </div>
-          <div className="justify-between items-stretch self-center flex gap-5 my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-            <a
-              href="#home"
-              className="text-slate-400 text-center text-lg leading-5"
-            >
-              Home
-            </a>
-            <a
-              href="#about"
-              className="text-slate-400 text-center text-lg leading-5"
-            >
-              About
-            </a>
-            <a
-              href="#features"
-              className="text-slate-400 text-center text-lg leading-5"
-            >
-              Features
-            </a>
-            <a
-              href="#pricing"
-              className="text-slate-400 text-center text-lg leading-5"
-            >
-              Pricing
-            </a>
-            <a
-              href="#contact"
-              className="text-slate-400 text-center text-lg leading-5"
-            >
-              Contact Us
-            </a>
-          </div>
-          <div className="justify-end items-stretch self-center flex gap-4 my-auto max-md:justify-center">
+          <div className="justify-center items-center self-center flex gap-4 my-auto max-md:justify-center">
+            {/* Image links can be added here if needed */}
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/58ea4df9-851d-4c3a-a2eb-acee41a71a49?apiKey=d281bd051822428daa150eb2eda86050&"
               className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
               alt="Image 1"
             />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/59963193-a7ed-4d45-9905-5f233755d778?apiKey=d281bd051822428daa150eb2eda86050&"
+             <img
+               loading="lazy"
+               src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4520283-994c-4486-9031-fe76865692bd?apiKey=d281bd051822428daa150eb2eda86050&"
               className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
-              alt="Image 2"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fc1c2af-af02-4f67-acca-ab1921db4a5a?apiKey=d281bd051822428daa150eb2eda86050&"
-              className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
-              alt="Image 3"
-            />
-            <img
-              loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e4520283-994c-4486-9031-fe76865692bd?apiKey=d281bd051822428daa150eb2eda86050&"
-              className="aspect-square object-contain object-center w-9 overflow-hidden shrink-0 max-w-full"
-              alt="Image 4"
-            />
+               alt="Image 4"
+             />
+            {/* More images follow here... */}
           </div>
         </div>
         <div className="bg-gray-300 self-stretch w-full shrink-0 h-px mt-20 mx-8 max-md:mr-2.5 max-md:mt-10" />
-        <div className="text-slate-400 text-center text-lg leading-5 max-w-[550px] mt-8 max-md:max-w-full">
-          Copyright © 2023 product name | Privacy policy | Terms of service
+        <div className="text-slate-400 text-center text-lg leading-5 max-w-full mt-8 max-md:max-w-full">
+          <a href="#privacy-policy" className="hover:underline">Privacy policy</a> | 
+          <a href="#terms-of-service" className="hover:underline"> Terms of service</a>
         </div>
       </div>
     </header>
