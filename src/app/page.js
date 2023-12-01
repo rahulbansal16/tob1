@@ -185,7 +185,7 @@ function FeatureCard({ featureImage, featureTitle, featureDescription }) {
 
 function FeatureComponent(props) {
   return (
-    <header className="justify-center items-stretch bg-white flex flex-col">
+    <header id="features" className="justify-center items-stretch bg-white flex flex-col">
       <section className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
         <div className="flex w-full max-w-[1220px] flex-col items-stretch mt-32 mb-20 max-md:max-w-full max-md:my-10">
           <h1 className="text-black text-center text-4xl font-bold leading-10 max-w-[459px] self-center max-md:max-w-full">
@@ -424,7 +424,7 @@ function PricingComponentCard({ planName, planDescription, price, features, butt
 
 function PricingComponent(props) {
   return (
-    <div className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
+    <div id="pricing" className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
       <header className="header text-gray-400 text-center text-lg font-bold leading-5 tracking-widest uppercase self-center">Pricing</header>
       <h1 className="text-black text-center text-6xl font-bold leading-[66px] max-w-[656px] self-center mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Affordable pricing plans</h1>
       <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
