@@ -263,7 +263,7 @@ function TestimonialComponent() {
             name="John Carter"
             position="CTO @abc inc"
             quote="“An amazing service”"
-            description="Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas."
+            description="This has helped us close more customers. We are grateful for such service."
           />
           <TestimonialCard
             imageSrcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/2699910d-e4e7-4716-bc8f-2e689f43f107?apiKey=d281bd051822428daa150eb2eda86050&"className="aspect-square object-contain object-center w-20 overflow-hidden shrink-0 max-w-full"
@@ -272,7 +272,7 @@ function TestimonialComponent() {
             name="Jane Doe"
             position="CEO @xyz LLC"
             quote="“One of a kind service.”"
-            description="Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas."
+            description="The support team is awesome and the folks are really responsive"
           />
           <TestimonialCard
             imageSrcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/46367017-66c8-4fb6-abec-0634d8fb1056?apiKey=d281bd051822428daa150eb2eda86050&"className="aspect-square object-contain object-center w-20 overflow-hidden shrink-0 max-w-full"
@@ -280,7 +280,7 @@ function TestimonialComponent() {
             name="Alex Smith"
             position="Founder @example Co"
             quote="“Top notch development.”"
-            description="Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus a nunc mauris scelerisque sed egestas."
+            description="The demo quality created from the software is top notch."
           />
         </div>
       </form>
