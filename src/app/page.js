@@ -192,24 +192,24 @@ function FeatureComponent(props) {
             Browse our set of features
           </h1>
           <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[574px] mt-9 max-md:max-w-full">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.
+            We have iterated over our features set after listening to 1000 of customers.
           </p>
           <div className="mt-16 max-md:max-w-full max-md:mt-10">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
               <FeatureCard 
                 featureImage="https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&"
-                featureTitle="Feature 1"
-                featureDescription="Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar dolor elementum tempus hac."
+                featureTitle="1 Click Demo"
+                featureDescription="1 click customised demo creation for your potential clients."
               />
               <FeatureCard 
                 featureImage="https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/305eb236-2dd7-4b08-bace-263c0a07d44b?apiKey=d281bd051822428daa150eb2eda86050&"
-                featureTitle="Feature 2"
-                featureDescription="Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar dolor elementum tempus hac."
+                featureTitle="Advanced Analytics"
+                featureDescription="We track at what point your customer dropff to give you actionable insights to improve."
               />
               <FeatureCard 
                 featureImage="https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/ba539e40-de4a-4236-922a-e9d599ae5dd1?apiKey=d281bd051822428daa150eb2eda86050&"
-                featureTitle="Feature 3"
-                featureDescription="Lorem ipsum dolor sit amet consecte tur adipiscing elit semper dalar dolor elementum tempus hac."
+                featureTitle="Studio Quality Production"
+                featureDescription="Our tool uses advanced AI to create production quality demo."
               />
             </div>
           </div>
