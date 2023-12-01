@@ -15,82 +15,146 @@ const WebsiteWireframe = () => {
 export default WebsiteWireframe
 
 
+// function CollaborativeTeam(props) {
+//   return (
+//     <div className="bg-white flex flex-col">
+//       <header className="bg-white self-stretch flex w-full flex-col justify-center items-center px-5 py-8 max-md:max-w-full">
+//         <div className="flex w-full max-w-[1220px] items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
+//           <div className="items-center flex justify-between gap-5">
+//             <img
+//               loading="lazy"
+//               src="https://cdn.builder.io/api/v1/image/assets/TEMP/647015e6-993d-4fed-b44d-e505028d5352?apiKey=d281bd051822428daa150eb2eda86050&"
+//               className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0 max-w-full my-auto"
+//               alt="Logo"
+//             />
+//             <div className="text-black text-center text-4xl font-semibold leading-[54px] self-stretch">
+//               Logo
+//             </div>
+//           </div>
+//           <div className="justify-between items-center flex gap-5 pl-20 max-md:max-w-full max-md:flex-wrap max-md:pl-5">
+//             <div className="justify-between items-stretch flex gap-5 my-auto max-md:justify-center">
+//               <a href="#" className="text-black text-center text-lg leading-5">
+//                 Home
+//               </a>
+//               <a href="#" className="text-black text-center text-lg leading-5">
+//                 About
+//               </a>
+//               <a href="#" className="text-black text-center text-lg leading-5">
+//                 Features
+//               </a>
+//               <a href="#" className="text-black text-center text-lg leading-5">
+//                 Pricing
+//               </a>
+//             </div>
+//             <button
+//               className="text-white text-center text-base font-bold leading-5 justify-center items-center bg-black self-stretch px-5 py-5 rounded-[30px]"
+//               aria-label="Contact Us"
+//             >
+//               Contact Us
+//             </button>
+//           </div>
+//         </div>
+//       </header>
+//       <h1 className="text-black text-center text-6xl font-bold leading-[66px] self-center max-w-[774px] mt-20 max-md:max-w-full max-md:text-4xl max-md:leading-[53px] max-md:mt-10">
+//         Your team has never collaborated this well before
+//       </h1>
+//       <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[533px] mt-9 max-md:max-w-full">
+//         Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+//       </p>
+//       <form className="items-stretch self-center flex w-[357px] max-w-full justify-between gap-5 mt-11 max-md:mt-10">
+//         <div className="items-stretch bg-black flex justify-between gap-2 pl-8 pr-10 py-6 rounded-[40px] max-md:px-5">
+//           <div className="text-white text-center text-lg font-bold leading-5">
+//             Contact Us
+//           </div>
+//           <img
+//             loading="lazy"
+//             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1479c4a2-d35f-4a25-87df-6b93b95ff84d?apiKey=d281bd051822428daa150eb2eda86050&"
+//             className="aspect-square object-contain object-center w-[18px] justify-center items-center overflow-hidden shrink-0 max-w-full"
+//             alt="Contact Icon"
+//           />
+//         </div>
+//         <div className="text-black text-center text-lg leading-5 border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white grow justify-center pl-8 pr-5 py-6 rounded-[36.55px] border-solid items-start">
+//           <label htmlFor="signup">Sign up</label>
+//           <input
+//             type="text"
+//             id="signup"
+//             aria-label="Sign up"
+//             aria-role="textbox"
+//           />
+//         </div>
+//       </form>
+//       <img
+//         loading="lazy"
+//         srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&"className="aspect-[2.08] object-contain object-center w-full overflow-hidden self-center max-w-[1260px] mt-28 max-md:max-w-full max-md:mt-10"
+//         alt="Team Collaboration"
+//       />
+//     </div>
+//   );
+// }
+
 function CollaborativeTeam(props) {
   return (
-    <div className="bg-white flex flex-col">
-      <header className="bg-white self-stretch flex w-full flex-col justify-center items-center px-5 py-8 max-md:max-w-full">
-        <div className="flex w-full max-w-[1220px] items-stretch justify-between gap-5 max-md:max-w-full max-md:flex-wrap">
-          <div className="items-center flex justify-between gap-5">
+    <div className="bg-white flex flex-col items-center justify-center">
+      <header className="bg-white w-full flex flex-col justify-center items-center px-5 py-8">
+        <div className="flex w-full max-w-[1220px] items-center justify-between gap-5 flex-wrap">
+          <div className="flex items-center gap-5 mb-4 md:mb-0">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/647015e6-993d-4fed-b44d-e505028d5352?apiKey=d281bd051822428daa150eb2eda86050&"
-              className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0 max-w-full my-auto"
+              className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0"
               alt="Logo"
             />
-            <div className="text-black text-center text-4xl font-semibold leading-[54px] self-stretch">
+            <div className="text-black text-center text-4xl font-semibold">
               Logo
             </div>
           </div>
-          <div className="justify-between items-center flex gap-5 pl-20 max-md:max-w-full max-md:flex-wrap max-md:pl-5">
-            <div className="justify-between items-stretch flex gap-5 my-auto max-md:justify-center">
-              <a href="#" className="text-black text-center text-lg leading-5">
-                Home
-              </a>
-              <a href="#" className="text-black text-center text-lg leading-5">
-                About
-              </a>
-              <a href="#" className="text-black text-center text-lg leading-5">
-                Features
-              </a>
-              <a href="#" className="text-black text-center text-lg leading-5">
-                Pricing
-              </a>
-            </div>
-            <button
-              className="text-white text-center text-base font-bold leading-5 justify-center items-center bg-black self-stretch px-5 py-5 rounded-[30px]"
-              aria-label="Contact Us"
-            >
+          <div className="flex items-center gap-5 flex-wrap justify-center">
+            <a href="#home" className="text-black text-center text-lg mb-2 md:mb-0">Home</a>
+            <a href="#about" className="text-black text-center text-lg mb-2 md:mb-0">About</a>
+            <a href="#features" className="text-black text-center text-lg mb-2 md:mb-0">Features</a>
+            <a href="#pricing" className="text-black text-center text-lg mb-2 md:mb-0">Pricing</a>
+            <a href="#contact" className="bg-black text-white text-center text-base font-bold px-4 py-2 rounded-full">
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </header>
-      <h1 className="text-black text-center text-6xl font-bold leading-[66px] self-center max-w-[774px] mt-20 max-md:max-w-full max-md:text-4xl max-md:leading-[53px] max-md:mt-10">
-        Your team has never collaborated this well before
+      <h1 className="text-black text-center text-4xl md:text-6xl font-bold leading-[53px] md:leading-[66px] max-w-[774px] mt-10 md:mt-20">
+        Customised demos For Your Potential Customers.
       </h1>
-      <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[533px] mt-9 max-md:max-w-full">
-        Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+      <p className="text-slate-400 text-center text-lg leading-8 max-w-[533px] mt-5 md:mt-9">
+        We make it easier to close your sales faster by creating demos which appeal to your customers.
       </p>
-      <form className="items-stretch self-center flex w-[357px] max-w-full justify-between gap-5 mt-11 max-md:mt-10">
-        <div className="items-stretch bg-black flex justify-between gap-2 pl-8 pr-10 py-6 rounded-[40px] max-md:px-5">
-          <div className="text-white text-center text-lg font-bold leading-5">
-            Contact Us
-          </div>
+      <div className="flex flex-col md:flex-row justify-center gap-5 mt-7 md:mt-11">
+        <a href="#contact-form" className="bg-black text-white text-lg font-bold px-6 py-3 rounded-full flex items-center gap-2 justify-center">
+          <span>Contact Us</span>
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/1479c4a2-d35f-4a25-87df-6b93b95ff84d?apiKey=d281bd051822428daa150eb2eda86050&"
-            className="aspect-square object-contain object-center w-[18px] justify-center items-center overflow-hidden shrink-0 max-w-full"
+            className="w-[18px] h-[18px]"
             alt="Contact Icon"
           />
-        </div>
-        <div className="text-black text-center text-lg leading-5 border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white grow justify-center pl-8 pr-5 py-6 rounded-[36.55px] border-solid items-start">
-          <label htmlFor="signup">Sign up</label>
+        </a>
+        <form className="flex flex-col md:flex-row items-center border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white pl-8 pr-5 py-3 rounded-full">
+          <label htmlFor="signup" className="text-black text-lg font-bold mr-2">Sign up</label>
           <input
             type="text"
             id="signup"
+            className="outline-none text-black mt-2 md:mt-0"
             aria-label="Sign up"
-            aria-role="textbox"
           />
-        </div>
-      </form>
+        </form>
+      </div>
       <img
         loading="lazy"
-        srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&"className="aspect-[2.08] object-contain object-center w-full overflow-hidden self-center max-w-[1260px] mt-28 max-md:max-w-full max-md:mt-10"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/513f796b-9ef3-4047-957e-54c705b5414f?apiKey=d281bd051822428daa150eb2eda86050&"
+        className="w-full max-w-[1260px] mt-20 md:mt-28"
         alt="Team Collaboration"
       />
     </div>
   );
 }
+
 
 
 function FeatureCard({ featureImage, featureTitle, featureDescription }) {
@@ -275,54 +339,101 @@ function Navbar(props) {
   );
 }
 
+// function PricingComponentCard({ planName, planDescription, price, features, buttonText }) {
+//   return (
+//     <div className="border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white flex flex-col items-stretch pb-12 rounded-3xl border-solid">
+//       <header className="bg-slate-50 flex w-full flex-col px-10 py-12 rounded-3xl max-md:px-5">
+//         <h1 className="text-black text-center text-3xl font-bold leading-10 self-center mt-1.5">{planName}</h1>
+//         <h2 className="text-black text-center text-xl font-medium leading-6 mt-7">{planDescription}</h2>
+//         <h1 className="text-black text-center text-4xl font-bold leading-[66px] self-center mt-5">${price}</h1>
+//         <button className="text-white text-center text-xl font-bold leading-5 justify-center items-center bg-black self-stretch mt-7 px-5 py-7 rounded-[47.273px]">{buttonText}</button>
+//       </header>
+//       <form className="flex w-full flex-col items-stretch mt-10 mb-6 px-11 max-md:px-5">
+//         {features.map(feature => (
+//           <div key={feature.id} className="items-stretch flex justify-between gap-3.5 mt-4">
+//             <img loading="lazy" src={feature.imageUrl} className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+//             <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">{feature.description}</div>
+//           </div>
+//         ))}
+//       </form>
+//     </div>
+//   );
+// }
 
-function PricingComponentCard(props) {
+function PricingComponentCard({ planName, planDescription, price, features, buttonText }) {
+  // Common checkmark image URL
+  const checkmarkImageUrl = "https://cdn.builder.io/api/v1/image/assets/TEMP/da0d5466-3e37-4d98-a524-0095dfc74b78?apiKey=d281bd051822428daa150eb2eda86050&"; // Replace with actual URL
+
   return (
     <div className="border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white flex flex-col items-stretch pb-12 rounded-3xl border-solid">
       <header className="bg-slate-50 flex w-full flex-col px-10 py-12 rounded-3xl max-md:px-5">
-        <h1 className="text-black text-center text-3xl font-bold leading-10 self-center mt-1.5">Basic</h1>
-        <h2 className="text-black text-center text-xl font-medium leading-6 mt-7">ideal for individuals</h2>
-        <h1 className="text-black text-center text-4xl font-bold leading-[66px] self-center mt-5">$0</h1>
-        <button className="text-white text-center text-xl font-bold leading-5 justify-center items-center bg-black self-stretch mt-7 px-5 py-7 rounded-[47.273px]">Get started</button>
+        <h1 className="text-black text-center text-3xl font-bold leading-10 self-center mt-1.5">{planName}</h1>
+        <h2 className="text-black text-center text-xl font-medium leading-6 mt-7">{planDescription}</h2>
+       { price && <h1 className="text-black text-center text-4xl font-bold leading-[66px] self-center mt-5">${price}</h1> }
+        <button className="text-white text-center text-xl font-bold leading-5 justify-center items-center bg-black self-stretch mt-7 px-5 py-7 rounded-[47.273px]">{buttonText}</button>
       </header>
       <form className="flex w-full flex-col items-stretch mt-10 mb-6 px-11 max-md:px-5">
-        <div className="items-stretch flex justify-between gap-3.5">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a56fc00-b8dd-4b26-b0ef-93b77806db3e?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
-          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">All analytics features</div>
-        </div>
-        <div className="items-stretch flex justify-between gap-3.5 mt-4">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc3344ff-b198-4d37-a02f-0ca843f10776?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
-          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 250,000 tracked visits</div>
-        </div>
-        <div className="items-stretch flex justify-between gap-3.5 mt-4">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/da0d5466-3e37-4d98-a524-0095dfc74b78?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
-          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Normal support</div>
-        </div>
-        <div className="items-stretch flex justify-between gap-3.5 mt-4">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc6fb51a-84e3-42f0-ab11-8a7c46461cb0?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
-          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Mobile app</div>
-        </div>
-        <div className="items-stretch flex justify-between gap-3.5 mt-4">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7db4a653-bdda-4068-842e-af8ce1e53197?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
-          <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 3 team members</div>
-        </div>
+        {features.map((feature, index) => (
+          <div key={index} className="items-stretch flex justify-between gap-3.5 mt-4">
+            <img loading="lazy" src={checkmarkImageUrl} alt="Check" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+            <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">{feature}</div>
+          </div>
+        ))}
       </form>
     </div>
   );
 }
+
+
+
+
+// function PricingComponentCard(props) {
+//   return (
+//     <div className="border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white flex flex-col items-stretch pb-12 rounded-3xl border-solid">
+//       <header className="bg-slate-50 flex w-full flex-col px-10 py-12 rounded-3xl max-md:px-5">
+//         <h1 className="text-black text-center text-3xl font-bold leading-10 self-center mt-1.5">Basic</h1>
+//         <h2 className="text-black text-center text-xl font-medium leading-6 mt-7">ideal for individuals</h2>
+//         <h1 className="text-black text-center text-4xl font-bold leading-[66px] self-center mt-5">$0</h1>
+//         <button className="text-white text-center text-xl font-bold leading-5 justify-center items-center bg-black self-stretch mt-7 px-5 py-7 rounded-[47.273px]">Get started</button>
+//       </header>
+//       <form className="flex w-full flex-col items-stretch mt-10 mb-6 px-11 max-md:px-5">
+//         <div className="items-stretch flex justify-between gap-3.5">
+//           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/4a56fc00-b8dd-4b26-b0ef-93b77806db3e?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+//           <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">All analytics features</div>
+//         </div>
+//         <div className="items-stretch flex justify-between gap-3.5 mt-4">
+//           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc3344ff-b198-4d37-a02f-0ca843f10776?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+//           <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 250,000 tracked visits</div>
+//         </div>
+//         <div className="items-stretch flex justify-between gap-3.5 mt-4">
+//           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/da0d5466-3e37-4d98-a524-0095dfc74b78?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+//           <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Normal support</div>
+//         </div>
+//         <div className="items-stretch flex justify-between gap-3.5 mt-4">
+//           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc6fb51a-84e3-42f0-ab11-8a7c46461cb0?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+//           <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Mobile app</div>
+//         </div>
+//         <div className="items-stretch flex justify-between gap-3.5 mt-4">
+//           <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7db4a653-bdda-4068-842e-af8ce1e53197?apiKey=d281bd051822428daa150eb2eda86050&" className="aspect-square object-contain object-center w-[26px] overflow-hidden shrink-0 max-w-full" />
+//           <div className="text-black text-lg font-bold leading-5 self-center grow shrink basis-auto my-auto">Up to 3 team members</div>
+//         </div>
+//       </form>
+//     </div>
+//   );
+// }
 
 function PricingComponent(props) {
   return (
     <div className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
       <header className="header text-gray-400 text-center text-lg font-bold leading-5 tracking-widest uppercase self-center">Pricing</header>
       <h1 className="text-black text-center text-6xl font-bold leading-[66px] max-w-[656px] self-center mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Affordable pricing plans</h1>
-      <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">Lorem ipsum dolor sit amet consectetur adipiscing elit tortor eu egestas morbi sem vulputate etiam facilisis pellentesque ut quis.</p>
+      <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
 
       <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0 align-middle">
-        <PricingComponentCard/>
-        <PricingComponentCard/>
-        <PricingComponentCard/>
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch  align-middle">
+        <PricingComponentCard planName={"Basic"} buttonText={"Get Started"} features={["All Analytics Features", "Upto 5 videos", "Normal Support", "3 Team members"]} planDescription={"Ideal For Individuals"} price={"0"} key={"individual"}/>
+        <PricingComponentCard planName={"Growth"} buttonText={"Get Started"} features={["Everything on Basic Plan", "Premium Support", "Upto 50 Videos", "Upto 10 Team members"]} planDescription={"Idea For Small Business"} price={"50"} key={"growth"}/>
+        <PricingComponentCard planName={"Enterprise"} buttonText={"Contact Us"} features={["Everything on Growth Plan", "Advanced Analytics", "Premium SUpport", "Upto 50 Team members"]} planDescription={"Ideal For Large Organization"} key={"enterprise"}/>
         </div>
       </form>
     </div>
