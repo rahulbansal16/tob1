@@ -3,7 +3,7 @@ import React from "react";
 
 const WebsiteWireframe = () => {
   return (
-    <div>
+      <div>
       <CollaborativeTeam/>
       <PricingComponent/>
       <FeatureComponent/>
@@ -94,8 +94,20 @@ export default WebsiteWireframe
 
 function CollaborativeTeam(props) {
   return (
-    <div className="bg-white flex flex-col items-center justify-center">
-      <header className="bg-white w-full flex flex-col justify-center items-center px-5 py-8">
+    <div
+
+      style={{
+
+        backgroundImage: "url('/bg.svg')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div
+
+        className="bg-white flex flex-col items-center justify-center opacity-80"
+      >
+      <header className= "w-full flex flex-col justify-center items-center px-5 py-8">
         <div className="flex w-full max-w-[1220px] items-center justify-between gap-5 flex-wrap">
           <div className="flex items-center gap-5 mb-4 md:mb-0">
             <img
@@ -151,6 +163,7 @@ function CollaborativeTeam(props) {
         className="w-full max-w-[1260px] mt-20 md:mt-28"
         alt="Team Collaboration"
       />
+    </div>
     </div>
   );
 }
