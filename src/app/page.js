@@ -139,7 +139,7 @@ function CollaborativeTeam(props) {
               className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0"
               alt="Logo"
             />
-            <div className="text-black text-center text-4xl font-semibold">
+            <div className="text-black text-center text-4xl font-semibold hidden sm:block">
               Logo
             </div>
           </div>
@@ -157,7 +157,7 @@ function CollaborativeTeam(props) {
       <h1 className="text-black text-center text-4xl md:text-6xl font-bold leading-[53px] md:leading-[66px] max-w-[774px] mt-10 md:mt-20">
         Customised demos For Your Potential Customers.
       </h1>
-      <p className="text-slate-400 text-center text-lg leading-8 max-w-[533px] mt-5 md:mt-9">
+      <p className="text-slate-400 text-center text-lg leading-8 max-w-[533px] mt-5 md:mt-9 max-sm:px-5">
         We make it easier to close your sales faster by creating demos which appeal to your customers.
       </p>
       <div className="flex flex-col md:flex-row justify-center gap-5 mt-7 md:mt-11">
@@ -170,7 +170,8 @@ function CollaborativeTeam(props) {
             alt="Contact Icon"
           />
         </a>
-        <form className="flex flex-col md:flex-row items-center border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white pl-8 pr-5 py-3 rounded-full">
+        <button className='border by-white px-8 py-5  border-[color:var(--neutral-colors-color-600,#D4D2E3)] rounded-full font-bold'>Sign Up</button>
+        {/* <form className="flex flex-col md:flex-row items-center border border-[color:var(--neutral-colors-color-600,#D4D2E3)] bg-white pl-8 pr-5 py-3 rounded-full">
           <label htmlFor="signup" className="text-black text-lg font-bold mr-2">Sign up</label>
           <input
             type="text"
@@ -178,7 +179,7 @@ function CollaborativeTeam(props) {
             className="outline-none text-black mt-2 md:mt-0"
             aria-label="Sign up"
           />
-        </form>
+        </form> */}
       </div>
       <img
         loading="lazy"
@@ -230,7 +231,7 @@ function FeatureComponent(props) {
     >
     <header id="features" className="justify-center items-stretch bg-white flex flex-col">
       <section className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
-        <div className="flex w-full max-w-[1220px] flex-col items-stretch mt-32 mb-20 max-md:max-w-full max-md:my-10">
+        <div className="flex w-full max-w-[1220px] flex-col items-stretch mt-16 mb-20 max-md:max-w-full max-md:my-10">
           <h1 className="text-black text-center text-4xl font-bold leading-10 max-w-[459px] self-center max-md:max-w-full">
             Browse our set of features
           </h1>
@@ -345,15 +346,15 @@ function Navbar(props) {
   return (
     <header className="items-stretch bg-white flex flex-col justify-center align-middle">
       <div className="bg-white flex w-full max-w-full flex-col items-center px-20 py-11 max-md:px-5">
-        <div className="self-stretch flex items-center justify-center gap-5 mt-2.5 mx-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5">
+        <div className="self-stretch flex items-center justify-center gap-5 mt-1 sm:mt-2.5 mx-8 max-md:max-w-full max-md:flex-wrap max-md:mr-2.5">
           <a href="#home" className="flex items-center justify-between gap-5">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/55a638a0-38d6-4278-ad2c-5ad279c6a570?apiKey=d281bd051822428daa150eb2eda86050&"
-              className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0 max-w-full my-auto"
+              className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0 max-w-full my-auto hidden sm:block"
               alt="Logo"
             />
-            <div className="text-black text-center text-4xl font-semibold leading-[54px] self-stretch">
+            <div className="text-black text-center text-4xl font-semibold leading-[54px] self-stretch hidden sm:block">
               Logo
             </div>
           </a>
@@ -476,7 +477,7 @@ function PricingComponentCard({ planName, planDescription, price, features, butt
 
 function PricingComponent(props) {
   return (
-    <motion.div id="pricing" className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full"
+    <motion.div id="pricing" className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full mt-16"
       initial="hidden"
       whileInView="visible"
       variants={childVariants}
