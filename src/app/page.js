@@ -81,7 +81,7 @@ export default WebsiteWireframe
 //       <h1 className="text-black text-center text-6xl font-bold leading-[66px] self-center max-w-[774px] mt-20 max-md:max-w-full max-md:text-4xl max-md:leading-[53px] max-md:mt-10">
 //         Your team has never collaborated this well before
 //       </h1>
-//       <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[533px] mt-9 max-md:max-w-full">
+//       <p className="text-slate-900 text-center text-lg leading-8 self-center max-w-[533px] mt-9 max-md:max-w-full">
 //         Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
 //       </p>
 //       <form className="items-stretch self-center flex w-[357px] max-w-full justify-between gap-5 mt-11 max-md:mt-10">
@@ -157,7 +157,7 @@ function CollaborativeTeam(props) {
       <h1 className="text-black text-center text-4xl md:text-6xl font-bold leading-[53px] md:leading-[66px] max-w-[774px] mt-10 md:mt-20">
         Customised demos For Your Potential Customers.
       </h1>
-      <p className="text-slate-400 text-center text-lg leading-8 max-w-[533px] mt-5 md:mt-9 max-sm:px-5">
+      <p className="text-slate-900 text-center text-lg leading-8 max-w-[533px] mt-5 md:mt-9 max-sm:px-5">
         We make it easier to close your sales faster by creating demos which appeal to your customers.
       </p>
       <div className="flex flex-col md:flex-row justify-center gap-5 mt-7 md:mt-11">
@@ -205,7 +205,7 @@ function FeatureCard({ featureImage, featureTitle, featureDescription }) {
           alt={featureTitle}
         />
         <h2 className="text-black text-center text-3xl font-bold leading-10 mt-8">{featureTitle}</h2>
-        <p className="text-slate-400 text-center text-lg leading-8 self-stretch mt-7">
+        <p className="text-slate-900 text-center text-lg leading-8 self-stretch mt-7">
           {featureDescription}
         </p>
         <button
@@ -235,7 +235,7 @@ function FeatureComponent(props) {
           <h1 className="text-black text-center text-4xl font-bold leading-10 max-w-[459px] self-center max-md:max-w-full">
             Browse our set of features
           </h1>
-          <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[574px] mt-9 max-md:max-w-full">
+          <p className="text-slate-900 text-center text-lg leading-8 self-center max-w-[574px] mt-9 max-md:max-w-full">
             We have iterated over our features set after listening to 1000 of customers.
           </p>
           <div className="mt-16 max-md:max-w-full max-md:mt-10">
@@ -282,7 +282,7 @@ function TestimonialCard({ imageSrcSet, altText, name, position, quote, descript
             </div>
           </div>
           <div className="text-black text-2xl font-bold leading-6 mt-7">{quote}</div>
-          <div className="text-slate-400 text-lg leading-8 mt-5">
+          <div className="text-slate-900 text-lg leading-8 mt-5">
             {description}
           </div>
         </div>
@@ -304,7 +304,7 @@ function TestimonialComponent() {
       <header className="text-black text-center text-4xl font-bold leading-10 self-center max-w-[357px] mt-12 max-md:mt-10">
         What our clients say
       </header>
-      <div className="text-slate-400 text-center text-lg leading-8 self-center max-w-[614px] mt-7 max-md:max-w-full">
+      <div className="text-slate-900 text-center text-lg leading-8 self-center max-w-[614px] mt-7 max-md:max-w-full">
         Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero accumsan.
       </div>
       <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
@@ -359,11 +359,11 @@ function Navbar(props) {
             </div>
           </a>
           <div className="justify-center items-center self-center flex gap-5 my-auto max-md:max-w-full max-md:flex-wrap max-md:justify-center">
-            <a href="#home" className="text-slate-400 text-center text-lg leading-5">Home</a>
-            <a href="#about" className="text-slate-400 text-center text-lg leading-5">About</a>
-            <a href="#features" className="text-slate-400 text-center text-lg leading-5">Features</a>
-            <a href="#pricing" className="text-slate-400 text-center text-lg leading-5">Pricing</a>
-            <a href="#contact" className="text-slate-400 text-center text-lg leading-5">Contact Us</a>
+            <a href="#home" className="text-slate-900 text-center text-lg leading-5">Home</a>
+            <a href="#about" className="text-slate-900 text-center text-lg leading-5">About</a>
+            <a href="#features" className="text-slate-900 text-center text-lg leading-5">Features</a>
+            <a href="#pricing" className="text-slate-900 text-center text-lg leading-5">Pricing</a>
+            <a href="#contact" className="text-slate-900 text-center text-lg leading-5">Contact Us</a>
           </div>
           <div className="justify-center items-center self-center flex gap-4 my-auto max-md:justify-center">
             {/* Image links can be added here if needed */}
@@ -383,7 +383,7 @@ function Navbar(props) {
           </div>
         </div>
         <div className="bg-gray-300 self-stretch w-full shrink-0 h-px mt-20 mx-8 max-md:mr-2.5 max-md:mt-10" />
-        <div className="text-slate-400 text-center text-lg leading-5 max-w-full mt-8 max-md:max-w-full">
+        <div className="text-slate-900 text-center text-lg leading-5 max-w-full mt-8 max-md:max-w-full">
           <a href="#privacy-policy" className="hover:underline">Privacy policy</a> | 
           <a href="#terms-of-service" className="hover:underline"> Terms of service</a>
         </div>
@@ -494,7 +494,7 @@ function PricingComponent(props) {
       >
         <header className="header text-gray-400 text-center text-lg font-bold leading-5 tracking-widest uppercase self-center">Pricing</header>
         <h1 className="text-black text-center text-6xl font-bold leading-[66px] max-w-[656px] self-center mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Affordable pricing plans</h1>
-        <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
+        <p className="text-slate-900 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
       </motion.div>
 
       <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
