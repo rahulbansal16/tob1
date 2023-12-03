@@ -1,6 +1,7 @@
 "use client";
 import { motion } from 'framer-motion';
 import React from "react";
+import { useState } from 'react';
 
 
 const variants = {
@@ -116,6 +117,13 @@ export default WebsiteWireframe
 // }
 
 function CollaborativeTeam(props) {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+
   return (
     <div
 
@@ -130,7 +138,7 @@ function CollaborativeTeam(props) {
 
         className="bg-white flex flex-col items-center justify-center opacity-80"
       >
-      <header className= "w-full flex flex-col justify-center items-center px-5 py-8">
+      <header className= "w-full flex flex-col justify-center items-center px-5 py-8 hidden sm:flex">
         <div className="flex w-full max-w-[1220px] items-center justify-between gap-5 flex-wrap">
           <div className="flex items-center gap-5 mb-4 md:mb-0">
             <img
@@ -154,6 +162,39 @@ function CollaborativeTeam(props) {
           </div>
         </div>
       </header>
+
+              <header className="w-full flex flex-col justify-center items-center px-5 py-8">
+          <div className="flex w-full max-w-[1220px] items-center justify-between gap-5 flex-wrap">
+            {/* Hamburger Button */}
+            <button className="md:hidden" onClick={toggleMenu}>
+              {/* Hamburger Icon */}
+              <div className="space-y-2">
+                <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+                <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
+              </div>
+            </button>
+
+            {/* Rest of your code remains the same */}
+
+            {/* Responsive Menu */}
+            <div onClick={toggleMenu} className={`absolute top-0 left-0 h-screen w-full bg-white transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out flex flex-col items-center justify-center md:hidden`}>
+              {/* Close Button */}
+              <button className="absolute top-5 right-5" onClick={toggleMenu}>
+                <div className="text-3xl font-semibold">X</div>
+              </button>
+
+              {/* Menu Items */}
+              <a href="#home" className="text-black text-center text-lg mb-2">Home</a>
+              <a href="#about" className="text-black text-center text-lg mb-2">About</a>
+              <a href="#features" className="text-black text-center text-lg mb-2">Features</a>
+              <a href="#pricing" className="text-black text-center text-lg mb-2">Pricing</a>
+              <a href="#contact" className="bg-black text-white text-center text-base font-bold px-4 py-2 rounded-full">
+                Contact Us
+              </a>
+            </div>
+          </div>
+        </header>
       <h1 className="text-black text-center text-4xl md:text-6xl font-bold leading-[53px] md:leading-[66px] max-w-[774px] mt-10 md:mt-20">
         Customised demos For Your Potential Customers.
       </h1>
