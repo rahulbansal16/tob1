@@ -373,7 +373,7 @@ function TestimonialComponent() {
             name="Alex Smith"
             position="Founder @example Co"
             quote="“Top notch development.”"
-            description="The demo quality created from the software is top notch."
+            description="The demo quality created from the software is top notch. Really amazing."
           />
         </div>
       </form>
