@@ -1,15 +1,38 @@
 "use client";
+import { motion } from 'framer-motion';
 import React from "react";
+
+
+const variants = {
+  hidden: { opacity: 0, y: 20 }, // Starting state
+  visible: {
+    opacity: 1,
+    staggerChildren: 0.2
+  }  // End state
+};
+
+const childVariants = {
+  hidden: { opacity: 0, y: 100 },
+  visible: { opacity: 1, y: 0, staggerChildren: 0.2 }
+}
+
 
 const WebsiteWireframe = () => {
   return (
-      <div>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={variants}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
+      animate="visible"
+    >
       <CollaborativeTeam/>
       <PricingComponent/>
       <FeatureComponent/>
       <TestimonialComponent></TestimonialComponent>
       <Navbar/>
-    </div>
+    </motion.div>
   )
 };
 export default WebsiteWireframe
@@ -198,6 +221,13 @@ function FeatureCard({ featureImage, featureTitle, featureDescription }) {
 
 function FeatureComponent(props) {
   return (
+    <motion.div
+      initial="hidden"
+    whileInView="visible"
+    variants={childVariants}
+    transition={{ duration: 0.5 }}
+    viewport={{ once: true }}
+    >
     <header id="features" className="justify-center items-stretch bg-white flex flex-col">
       <section className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
         <div className="flex w-full max-w-[1220px] flex-col items-stretch mt-32 mb-20 max-md:max-w-full max-md:my-10">
@@ -229,6 +259,7 @@ function FeatureComponent(props) {
         </div>
       </section>
     </header>
+    </motion.div>
   );
 }
 
@@ -261,6 +292,13 @@ function TestimonialCard({ imageSrcSet, altText, name, position, quote, descript
 
 function TestimonialComponent() {
   return (
+    <motion.div
+      initial="hidden"
+    whileInView="visible"
+    variants={childVariants}
+    transition={{ duration: 1 }}
+    viewport={{ once: true }}
+    >
     <section className="justify-center items-stretch bg-white flex flex-col px-20 py-12 max-md:px-5">
       <header className="text-black text-center text-4xl font-bold leading-10 self-center max-w-[357px] mt-12 max-md:mt-10">
         What our clients say
@@ -298,6 +336,7 @@ function TestimonialComponent() {
         </div>
       </form>
     </section>
+    </motion.div>
   );
 }
 
@@ -437,18 +476,33 @@ function PricingComponentCard({ planName, planDescription, price, features, butt
 
 function PricingComponent(props) {
   return (
-    <div id="pricing" className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full">
-      <header className="header text-gray-400 text-center text-lg font-bold leading-5 tracking-widest uppercase self-center">Pricing</header>
-      <h1 className="text-black text-center text-6xl font-bold leading-[66px] max-w-[656px] self-center mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Affordable pricing plans</h1>
-      <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
+    <motion.div id="pricing" className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full"
+      initial="hidden"
+      whileInView="visible"
+      variants={childVariants}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      // animate="visible"
+    >
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        variants={childVariants}
+        transition={{duration:0.5}}
+        viewport={{once: true}}
+      >
+        <header className="header text-gray-400 text-center text-lg font-bold leading-5 tracking-widest uppercase self-center">Pricing</header>
+        <h1 className="text-black text-center text-6xl font-bold leading-[66px] max-w-[656px] self-center mt-4 max-md:max-w-full max-md:text-4xl max-md:leading-[53px]">Affordable pricing plans</h1>
+        <p className="text-slate-400 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
+      </motion.div>
 
       <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch  align-middle">
         <PricingComponentCard planName={"Basic"} buttonText={"Get Started"} features={["All Analytics Features", "Upto 5 videos", "Normal Support", "3 Team members"]} planDescription={"Ideal For Individuals"} price={"0"} key={"individual"}/>
         <PricingComponentCard planName={"Growth"} buttonText={"Get Started"} features={["Everything on Basic Plan", "Premium Support", "Upto 50 Videos", "Upto 10 Team members"]} planDescription={"Idea For Small Business"} price={"50"} key={"growth"}/>
-        <PricingComponentCard planName={"Enterprise"} buttonText={"Contact Us"} features={["Everything on Growth Plan", "Advanced Analytics", "Premium SUpport", "Upto 50 Team members"]} planDescription={"Ideal For Large Organization"} key={"enterprise"}/>
+        <PricingComponentCard planName={"Enterprise"} buttonText={"Contact Us"} features={["Everything on Growth Plan", "Advanced Analytics", "Premium SUpport", "Upto 50 Team members"]} planDescription={"Ideal For Large Organization"} price={"100+"} key={"enterprise"}/>
         </div>
       </form>
-    </div>
+    </motion.div>
   );
 }
