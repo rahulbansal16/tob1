@@ -178,7 +178,7 @@ function CollaborativeTeam(props) {
             {/* Rest of your code remains the same */}
 
             {/* Responsive Menu */}
-            <div onClick={toggleMenu} className={`absolute top-0 left-0 h-screen w-full bg-white transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out flex flex-col items-center justify-center md:hidden`}>
+            <div onClick={toggleMenu} className={`absolute top-0 left-0 h-screen w-full ${!isMenuOpen?'hidden':'flex'} bg-white transform ${isMenuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out flex flex-col items-center justify-center md:hidden`}>
               {/* Close Button */}
               <button className="absolute top-5 right-5" onClick={toggleMenu}>
                 <div className="text-3xl font-semibold">X</div>
