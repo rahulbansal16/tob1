@@ -531,7 +531,9 @@ function PricingComponentCard({ planName, planDescription, price, features, butt
 
 function PricingComponent(props) {
   return (
-    <motion.div id="pricing" className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full mt-16"
+    <motion.div id="pricing"
+    //  className="bg-white flex w-full flex-col justify-center items-center px-5 py-12 max-md:max-w-full mt-16"
+    className='bg-white flex flex-col py-12 items-center max-md:items-stretch max-md:mr-2.5'
       initial="hidden"
       whileInView="visible"
       variants={childVariants}
@@ -551,8 +553,8 @@ function PricingComponent(props) {
         <p className="text-slate-900 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
       </motion.div>
 
-        <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+        <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-3 max-md:mb-10">
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
         <PricingComponentCard planName={"Basic"} buttonText={"Get Started"} features={["All Analytics Features", "Upto 5 videos", "Normal Support", "3 Team members"]} planDescription={"Ideal For Individuals"} price={"0"} key={"individual"}/>
         <PricingComponentCard planName={"Growth"} buttonText={"Get Started"} features={["Everything on Basic Plan", "Premium Support", "Upto 50 Videos", "Upto 10 Team members"]} planDescription={"Idea For Small Business"} price={"50"} key={"growth"}/>
         <PricingComponentCard planName={"Enterprise"} buttonText={"Contact Us"} features={["Everything on Growth Plan", "Advanced Analytics", "Premium SUpport", "Upto 50 Team members"]} planDescription={"Ideal For Large Organization"} price={"100+"} key={"enterprise"}/>
@@ -560,4 +562,4 @@ function PricingComponent(props) {
       </form>
     </motion.div>
   );
-}
+} 
