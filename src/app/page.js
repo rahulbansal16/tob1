@@ -292,8 +292,8 @@ function FeatureComponent(props) {
           <p className="text-slate-900 text-center text-lg leading-8 self-center max-w-[574px] mt-9 max-md:max-w-full">
             We have iterated over our features set after listening to 1000 of customers.
           </p>
-          <div className="mt-16 max-md:max-w-full max-md:mt-10">
-            <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+            <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
               <FeatureCard 
                 featureImage="https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/44728003-ff73-42e9-8581-dec18e5973fe?apiKey=d281bd051822428daa150eb2eda86050&"
                 featureTitle="1 Click Demo"
@@ -310,7 +310,7 @@ function FeatureComponent(props) {
                 featureDescription="Our tool uses advanced AI to create production quality demo."
               />
             </div>
-          </div>
+            </form>
         </div>
       </section>
     </header>
@@ -551,8 +551,8 @@ function PricingComponent(props) {
         <p className="text-slate-900 text-center text-lg leading-8 self-center max-w-[703px] mt-6 max-md:max-w-full">We Provide Pricing to help you grow.</p>
       </motion.div>
 
-      <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch  align-middle">
+        <form className="justify-center mt-7 mb-12 mx-5 max-md:max-w-full max-md:mr-2.5 max-md:mb-10">
+        <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
         <PricingComponentCard planName={"Basic"} buttonText={"Get Started"} features={["All Analytics Features", "Upto 5 videos", "Normal Support", "3 Team members"]} planDescription={"Ideal For Individuals"} price={"0"} key={"individual"}/>
         <PricingComponentCard planName={"Growth"} buttonText={"Get Started"} features={["Everything on Basic Plan", "Premium Support", "Upto 50 Videos", "Upto 10 Team members"]} planDescription={"Idea For Small Business"} price={"50"} key={"growth"}/>
         <PricingComponentCard planName={"Enterprise"} buttonText={"Contact Us"} features={["Everything on Growth Plan", "Advanced Analytics", "Premium SUpport", "Upto 50 Team members"]} planDescription={"Ideal For Large Organization"} price={"100+"} key={"enterprise"}/>
