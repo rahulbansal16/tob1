@@ -166,7 +166,20 @@ function CollaborativeTeam(props) {
               <header className="w-full flex flex-col justify-center items-center px-5 py-8">
           <div className="flex w-full max-w-[1220px] items-center justify-between gap-5 flex-wrap">
             {/* Hamburger Button */}
-            <button className="md:hidden" onClick={toggleMenu}>
+
+                 <div className="items-center gap-5 md:mb-0 flex sm:hidden">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/647015e6-993d-4fed-b44d-e505028d5352?apiKey=d281bd051822428daa150eb2eda86050&"
+              className="aspect-square object-contain object-center w-11 overflow-hidden shrink-0"
+              alt="Logo"
+            />
+            <div className="text-black text-center text-4xl font-semibold hidden sm:block">
+              Logo
+            </div>
+          </div>
+
+            <button className="sm:hidden" onClick={toggleMenu}>
               {/* Hamburger Icon */}
               <div className="space-y-2">
                 <span className="block h-0.5 w-8 animate-pulse bg-black"></span>
